@@ -1,0 +1,670 @@
+/* Estilos generales para el diseño del sito web */
+/* Inicio de estilos para menú */
+/* Estilos para el logo */
+.logo {
+  width: 200px;
+  height: 200px;
+  /* Otros estilos personalizados para el logo */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+/* Estilos para el título */
+.title {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Estilos para el menú */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ff0000; /* Cambia el color al pasar el mouse por encima */
+}
+
+/* Media queries para diseño responsivo */
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Estilos de inicio */
+/* Fin de estilos para menú */
+/* Estilos para el header */
+.comment {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-style: italic;
+  color: #777;
+}
+///////////
+#ib {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+#ib div {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-image: url('https://th.bing.com/th/id/OIP.TTbGXUnnp1rnvLWOkP0f7gHaEo?pid=ImgDet&w=957&h=598&rs=1'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#ib img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 50px;
+}
+
+#ib div p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  transition: transform 0.3s, color 0.3s; /* Transición suave de 0.3 segundos para transformación y color */
+  color: #FFFFFF; /* Color blanco por defecto */
+}
+
+#ib div p:first-of-type {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+#ib div p:last-of-type {
+  margin: 0;
+}
+
+/* Cambiar color y aplicar efecto de zoom al pasar el mouse */
+#ib div p:hover {
+  color: #87CEFA; /* Nuevo color celeste al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
+/* Cambiar color del resto del texto a negro */
+#ib div:hover p:not(:hover) {
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  #ib {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  #ib div {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  #ib img {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  #ib div p:first-of-type {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+
+  #ib div p {
+    font-size: 16px;
+  }
+}
+///////////
+///////////
+/* Estilos para computadoras */
+#ibuno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Fondo negro */
+  font-family: Arial, sans-serif;
+  color: #FFFFFF; /* Texto blanco */
+}
+
+#ibuno div {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-image: url('https://www.filepicker.io/api/file/P4YrtHMQs27mJgYUNhn1'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF; /* Texto blanco */
+}
+
+#ibuno .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#ibuno h2 {
+  font-size: 35px;
+  margin: 0;
+  margin-right: auto;
+}
+
+#ibuno p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#ibuno img {
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 20px;
+}
+#ibuno .btn {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  #ibuno .btn {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #ibuno {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  #ibuno div {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  #ibuno img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #ibuno div p:first-of-type {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+
+  #ibuno div p {
+    font-size: 16px;
+  }
+}
+
+////////
+#ibdos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+#ibdos div {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-image: url('https://www.filepicker.io/api/file/P4YrtHMQs27mJgYUNhn1');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF;
+  flex-direction: row-reverse;
+}
+
+#ibdos .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Cambio */
+  align-items: flex-start; /* Cambio */
+  margin-right: 20px; /* Cambio */
+}
+
+#ibdos h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#ibdos p {
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#ibdos img {
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 20px;
+  margin-right: auto;
+}
+#ibdos .btn {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  #ibdos .btn {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #ibdos {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  #ibdos div {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  #ibdos img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #ibdos div p:first-of-type {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+
+  #ibdos div p {
+    font-size: 16px;
+  }
+}
+
+
+/* Estilos para chatbot */
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+.chat-icon {
+	position: fixed;
+	bottom: 20px;
+	right: 100px;
+	z-index: 9999;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+nav li {
+	margin-left: 1rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Estilos para los botones */
+.btn {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+.btns {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.btns:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+/* Estilos para la sección del banner */
+#banner {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Añade un padding al banner en dispositivos móviles */
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/OIP.CfutNdTKJ72-Uxvq2XGZvwHaCO?pid=ImgDet&rs=1");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+#banner h2 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+#banner p {
+  font-size: 2rem;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Estilos para la sección del banner en dispositivos móviles */
+#banner {
+  background-image: url(tu_imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+@keyframes animacion-banner {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: animacion-banner 5s ease-in-out forwards;
+}
+
+#banner {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Añade un padding al banner en dispositivos móviles */
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.filepicker.io/api/file/P4YrtHMQs27mJgYUNhn1");
+  background-size: cover;
+  background-position: center;
+  opacity: 1.70;
+  z-index: -1;
+}
+
+#banner h2 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+#banner p {
+  font-size: 2rem;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Estilos para la sección del banner en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  #banner h2 {
+    font-size: 1.5rem; /* Modifica el tamaño de fuente para el título */
+  }
+
+  #banner p {
+    font-size: 0.9rem; /* Modifica el tamaño de fuente para el texto */
+  }
+
+  #banner .btn {
+    font-size: 1.3rem; /* Modifica el tamaño de fuente para el botón */
+  }
+
+  .large-text {
+    font-size: 3rem; /* Modifica el tamaño de fuente para cualquier otro elemento con la clase .large-text */
+  }
+}
+
+
+/* Fin Estilos para la sección del banner dispositivos moviles */
+/* Estilos para la sección "Sobre nosotros" */
+#about {
+	padding: 2rem;
+}
+
+#about h2 {
+	margin-bottom: 2rem;
+}
+
+/* Estilos para la sección de servicios */
+#services {
+	padding: 2rem;
+	background-image: url('https://th.bing.com/th/id/OIG.eJgQQJj1poJcE2SDJUd.?pid=ImgGn');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white; /* Letras blancas */
+}
+
+#services h2 {
+	margin-bottom: 2rem;
+}
+
+.service {
+	margin-bottom: 2rem;
+}
+
+.service h3 {
+	margin-bottom: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para el título */
+	padding: 0.5rem; /* Espacio interno para el título */
+	color: white; /* Color de las letras para el título */
+}
+
+.service p {
+	margin-top: 0;
+	background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para el párrafo */
+	padding: 0.5rem; /* Espacio interno para el párrafo */
+	color: white; /* Color de las letras para el párrafo */
+}
+
+
+#about {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#about a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#about a.btn:hover {
+  background-color: #555;
+}
+
+#about p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+/* Estilos para class */
+.iframe-container {
+  background-color: black;
+}
+
+#class {
+  background-image: url("https://krot.info/uploads/posts/2020-10/1603488334_42-p-fon-zvezdnoe-nebo-65.jpg");
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comment h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.comment p {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Fin Estilos para class */
+/* Estilos para el footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 2rem;
+}

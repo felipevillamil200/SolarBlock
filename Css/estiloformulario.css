@@ -1,0 +1,61 @@
+/* Estilos generales para el formulario */
+body {
+  background-image: url("https://lh6.googleusercontent.com/proxy/e78h0INXApGpv3ea-8wwFic6BdPgux2slE0DDsDUPS0XarzQqJk28B3IVPemKOOxNqg7Ue0bvJOI_Riy3His-1RlkAaOZZ2oX6LfC5vxcbVWus6cLAmj13yVoWLRjS8v=w1200-h630-p-k-no-nu");
+  background-size: cover;
+  background-position: center;
+}
+
+#starlink {
+  text-align: center;
+  color: #fff; /* Letras en color blanco */
+}
+
+#privacy-policy {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff; /* Letras en color blanco */
+}
+
+#starlink h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#starlink form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#starlink label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#starlink input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#starlink button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#starlink button:hover {
+  background-color: #0056b3;
+}
+
+#starlink p {
+  font-size: 14px;
+  color: #777;
+  display: none;
+}

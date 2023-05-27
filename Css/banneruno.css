@@ -1,0 +1,224 @@
+/* Estilos generales para los sliders deslizables */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Ajusta el valor de altura según tus necesidades */
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%; /* Ajusta el valor de altura según tus necesidades */
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Personaliza cada slide */
+.slide.slide1 {
+  /* Estilos para el primer slide */
+  background-color: #FF0000; /* Color de fondo para el slide1 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.slide.slide1 h2.large-text {
+  color: #FFFFFF; /* Color del título del slide1 */
+  font-size: 24px; /* Ajusta el tamaño de la letra según tus necesidades */
+  margin-top: 0;
+}
+
+.slide.slide1 p.large-text {
+  color: #FFFFFF; /* Color del texto del slide1 */
+  font-size: 14px; /* Ajusta el tamaño de la letra según tus necesidades */
+}
+
+/* Establece el fondo de imagen */
+.slide.slide1 {
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/9d040396567427.5eb1719ec40a3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; /* Ajusta el valor de altura según tus necesidades */
+}
+
+/* Estilos para los botones */
+.slide.slide1 a.btn {
+  color: #FFFFFF; /* Color del texto de los botones */
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.slide.slide1 a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para el primer slide en dispositivos móviles */
+@media (max-width: 507px) {
+  .slide.slide1 {
+    /* Estilos para dispositivos móviles */
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .slide.slide1 h2.large-text {
+    font-size: 20px;
+  }
+
+  .slide.slide1 p.large-text {
+    font-size: 12px;
+  }
+
+  .slide.slide1 a.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* Personaliza otros slides si es necesario */
+.slide.slide2 {
+  /* Estilos para el segundo slide */
+  background-color: #FF0000; /* Color de fondo para el slide1 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.slide.slide2 h2.large-text {
+  color: #FFFFFF; /* Color del título del slide1 */
+  font-size: 24px; /* Ajusta el tamaño de la letra según tus necesidades */
+  margin-top: 0;
+}
+
+.slide.slide2 p.large-text {
+  color: #FFFFFF; /* Color del texto del slide1 */
+  font-size: 14px; /* Ajusta el tamaño de la letra según tus necesidades */
+}
+
+/* Establece el fondo de imagen */
+.slide.slide2 {
+  background-image: url('../Images/image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; /* Ajusta el valor de altura según tus necesidades */
+}
+
+/* Estilos para los botones */
+.slide.slide2 a.btn {
+  color: #FFFFFF; /* Color del texto de los botones */
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.slide.slide2 a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+}
+/* Estilos para el segundo slide en dispositivos móviles */
+@media (max-width: 767px) {
+  .slide.slide2 {
+    /* Estilos para dispositivos móviles */
+    text-align: left;
+  }
+
+  .slide.slide2 h2.large-text {
+    font-size: 16px;
+  }
+
+  .slide.slide2 p.large-text {
+    font-size: 12px;
+  }
+}
+
+
+.slide.slide3 {
+  /* Estilos para el tercer slide */
+  background-color: #FF0000; /* Color de fondo para el slide1 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.slide.slide3 h2.large-text {
+  color: #FFFFFF; /* Color del título del slide1 */
+  font-size: 24px; /* Ajusta el tamaño de la letra según tus necesidades */
+  margin-top: 0;
+}
+
+.slide.slide3 p.large-text {
+  color: #FFFFFF; /* Color del texto del slide1 */
+  font-size: 14px; /* Ajusta el tamaño de la letra según tus necesidades */
+}
+
+/* Establece el fondo de imagen */
+.slide.slide3 {
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/9d040396567427.5eb1719ec40a3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; /* Ajusta el valor de altura según tus necesidades */
+}
+
+/* Estilos para los botones */
+.slide.slide3 a.btn {
+  color: #FFFFFF; /* Color del texto de los botones */
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.slide.slide3 a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para los botones de navegación */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
